@@ -28,8 +28,27 @@
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
+1.  使用示例
+- 安装git
+```shell
+sudo yum -y install git
+```
+- 拉取项目
+```shell
+git clone https://gitee.com/ZeroSeeker/server_maker.git
+```
+- 执行脚本
+```shell
+cd server_maker
+sudo chmod a+x Python_3.8.6_installer_huaweicloud.sh
+sudo ./Python_3.8.6_installer_huaweicloud.sh
+```
+
+2.  没有yum
+```shell
+sudo apt-get install yum
+```
+
 3.  xxxx
 
 #### 参与贡献
