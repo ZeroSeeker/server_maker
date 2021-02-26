@@ -8,7 +8,6 @@
 
 
 #### 安装教程
-
 1.  适用于linux环境下的Python安装
 - Python3的安装：
     - 进入服务器/root目录
@@ -24,7 +23,7 @@
     - 安装：while read requirement; do pip3 install $requirement -i https://mirrors.aliyun.com/pypi/simple; done < requirements.txt # 报错后跳过继续执行
 
 2.  Ubuntu中无法正确安装使用yum，改为使用apt-get
-3.  xxxx
+3.  注意不同系统的安装依赖有所不同，需要根据自己的系统选择安装脚本
 
 #### 使用说明
 
