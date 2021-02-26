@@ -40,6 +40,7 @@ git clone https://gitee.com/ZeroSeeker/server_maker.git
 - 执行脚本
 ```shell
 cd server_maker
+cd [your os]
 sudo chmod a+x Python_3.8.6_installer_huaweicloud.sh
 sudo ./Python_3.8.6_installer_huaweicloud.sh
 ```
