@@ -23,7 +23,7 @@
     - 上传到服务器：scp /Users/.../requirements.txt root@your_server_ip:/root
     - 安装：while read requirement; do pip3 install $requirement -i https://mirrors.aliyun.com/pypi/simple; done < requirements.txt # 报错后跳过继续执行
 
-2.  xxxx
+2.  Ubuntu中无法正确安装使用yum，改为使用apt-get
 3.  xxxx
 
 #### 使用说明
