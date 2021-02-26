@@ -35,7 +35,7 @@ sudo yum -y install git
 ```
 - 拉取项目
 ```shell
-git clone https://gitee.com/ZeroSeeker/server_maker.git
+sudo git clone https://gitee.com/ZeroSeeker/server_maker.git
 ```
 - 执行脚本
 ```shell
