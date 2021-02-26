@@ -5,7 +5,9 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 
 sudo apt-get -y install build-essential checkinstall
-sudo apt-get -y install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+sudo apt-get -y install openssl
+sudo apt-get -y install libssl-dev
+sudo apt-get -y install libreadline-gplv2-dev libncursesw5-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
 
 echo "正在下载 Python-3.8.6 ..."
 wget https://mirrors.huaweicloud.com/python/3.8.6/Python-3.8.6.tar.xz  # 下载Python包
