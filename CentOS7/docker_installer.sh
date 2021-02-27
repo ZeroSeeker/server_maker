@@ -9,7 +9,7 @@ sudo yum remove docker-latest-logrotate
 sudo yum remove docker-logrotate
 sudo yum remove docker-engine
 
-echo "开始依赖"
+echo "开始安装依赖"
 sudo yum install -y yum-utils
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
@@ -22,5 +22,5 @@ sudo systemctl start docker
 
 echo "测试运行"
 sudo docker run hello-world
-echo "显示镜像列表！"
+echo "显示镜像列表"
 docker images
