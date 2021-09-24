@@ -1,11 +1,8 @@
-# server_maker
+# server_maker 
+[![Fork me on Gitee](https://gitee.com/ZeroSeeker/server_maker/widgets/widget_3.svg)](https://gitee.com/ZeroSeeker/server_maker)
 
 #### 介绍
 服务器部署指南
-
-#### 软件架构
-软件架构说明
-
 
 #### 安装教程
 1.  适用于linux环境下的Python安装
@@ -27,11 +24,41 @@
 
 #### 使用说明
 
-1.  使用示例
+1.  检查当前环境
+- 检查是否安装了git
+```shell script
+[root@... CentOS7]# git --version
+git version 1.8.3.1
+```
+
 - 安装git
-```shell
+```shell script
 sudo yum -y install git
 ```
+
+- 查看系统是否已经安装了Python3，并查看安装的版本：
+```shell script
+[root@... CentOS7]# python3 --version
+Python 3.6.8
+[root@... CentOS7]# pip3 --version
+pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
+```
+
+- 查看安装位置：
+```shell script
+[root@... CentOS7]# which python3
+/usr/bin/python3
+[root@... CentOS7]# which pip3
+/usr/bin/pip3
+```
+
+- 卸载当前安装的python3：
+```shell script
+rpm -qa|grep python3|xargs rpm -ev --allmatches --nodeps  # 卸载pyhton3
+whereis python3 |xargs rm -frv  # 删除所有残余文件
+```
+
+2.  使用示例
 - 拉取项目
 ```shell
 sudo git clone https://gitee.com/ZeroSeeker/server_maker.git
@@ -44,26 +71,7 @@ sudo chmod a+x Python_3.8.6_installer_huaweicloud.sh
 sudo ./Python_3.8.6_installer_huaweicloud.sh
 ```
 
-2.  没有yum
+3.  没有yum
 ```shell
 sudo apt-get install yum
 ```
-
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
