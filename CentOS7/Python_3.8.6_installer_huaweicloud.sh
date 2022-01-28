@@ -24,7 +24,7 @@ tar -xvJf Python-3.8.6.tar.xz  # 解压Python包
 echo "进入解压后目录 Python-3.8.6 ..."
 cd Python-3.8.6 || return  # 进入解压后的目录
 echo "正在检测安装平台的目标特征的 ..."
-./configure --prefix=/usr/local/python3  # 检测你的安装平台的目标特征的
+./configure --prefix=/usr/local/python3 --enable-shared  # 检测你的安装平台的目标特征的
 echo "正在编译、安装 ..."
 make && make install  # 编译、安装
 echo "正在建立 Python3 的软连接..."
