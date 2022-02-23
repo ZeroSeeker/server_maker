@@ -75,3 +75,24 @@ sudo ./Python_3.8.6_installer_huaweicloud.sh
 ```shell
 sudo apt-get install yum
 ```
+
+#### 常见问题
+- python3: error while loading shared libraries: libpython3.5m.so.1.0: cannot open shared object file:  
+    解决：
+    ```text
+    错误原因:centos系统默认加载/usr/lib,/lib下面库文件，python默认安装到非此类文件夹。不过可以通过添加库配置信息
+
+    步骤如下：
+    
+    cd /etc/ld.so.conf.d
+    
+    vim python3.conf
+    
+    编辑 添加库文件路径 /usr/local/python3/lib
+    
+    退出保存
+    
+    运行 :
+    ldconfig
+    ```
+  
