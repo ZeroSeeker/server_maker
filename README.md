@@ -86,7 +86,7 @@ sudo apt-get install yum
     
     cd /etc/ld.so.conf.d
     
-    vim python3.conf
+    vi python3.conf
     
     编辑 添加库文件路径 /usr/local/python3/lib
     
