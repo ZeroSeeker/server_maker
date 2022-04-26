@@ -2,7 +2,18 @@
 [![Fork me on Gitee](https://gitee.com/ZeroSeeker/server_maker/widgets/widget_3.svg)](https://gitee.com/ZeroSeeker/server_maker)
 
 #### 介绍
-服务器部署指南
+服务器快速部署脚本
+- CentOS7
+  - installer_20220426.sh
+    - 介绍
+    ```text
+    包含：
+        卸载当前安装的python3版本
+        安装：Python-3.8.6
+        安装：Redis
+    ```
+  - 
+- Ubuntu
 
 #### 安装教程
 1.  适用于linux环境下的Python安装
