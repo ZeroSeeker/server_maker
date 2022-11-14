@@ -38,3 +38,8 @@ rm -rf Python-3.8.6  # 删除文件夹
 echo "删除文件 Python-3.8.6.tar.xz ..."
 rm -f Python-3.8.6.tar.xz  # 删除Python包
 echo ":) Python-3.8.6 安装完成！"
+echo "正在添加库文件路径..."
+echo '/usr/local/python3/lib' > /etc/ld.so.conf.d/python3.conf
+echo "正在更新配置..."
+ldconfig
+echo ":) Python-3.8.6 配置完成！"
