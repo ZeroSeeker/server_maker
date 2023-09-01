@@ -36,8 +36,11 @@ ln -s /etc/nginx/sbin/nginx /usr/bin/nginx
 echo "正在检查已安装版本 ..."
 nginx -v
 
-echo "正在切回root目录 ..."
-cd /root
+echo "正在创建开机自启动 ..."
+cp nginx.service /etc/systemd/system/nginx.service
+systemctl enable nginx
+systemctl start nginx.service
+systemctl status nginx.service
 
 echo ":) 完成 ..."
 
