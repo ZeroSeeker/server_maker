@@ -52,4 +52,4 @@ echo '/usr/local/python3/lib' > /etc/ld.so.conf.d/python3.conf
 echo "正在更新配置..."
 ldconfig
 echo ":) Python-3.8.6 配置完成！"
-echo python3 -V
+python3 -V
