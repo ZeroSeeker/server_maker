@@ -106,4 +106,15 @@ sudo apt-get install yum
     运行 :
     ldconfig
     ```
-  
+
+#### 快捷安装
+```shell
+# 下载服务器安装脚本
+wget https://gitee.com/lazypy/server_maker/releases/download/20230914.1/make_my_server.sh
+
+# 赋予脚本执行权限
+sudo chmod a+x make_my_server.sh
+
+# 执行脚本
+./make_my_server.sh
+```
