@@ -28,9 +28,9 @@ echo "正在检测安装平台的目标特征的 ..."
 echo "正在编译、安装 ..."
 make && make install  # 编译、安装
 echo "正在建立 Python3 的软连接..."
-ln -s /usr/local/python3/bin/python3 /usr/bin/python3  # 建立软连接
+ln -sf /usr/local/python3/bin/python3 /usr/bin/python3  # 建立软连接(强制覆盖)
 echo "正在建立 pip3 的软连接..."
-ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3  # 建立软连接
+ln -sf /usr/local/python3/bin/pip3 /usr/bin/pip3  # 建立软连接(强制覆盖)
 echo "返回上级目录 ..."
 cd ..
 echo "删除文件夹 Python-3.8.6 ..."
