@@ -15,7 +15,7 @@
   - 
 - Ubuntu
 
-#### 安装教程
+#### 安装教程 Python3.8.6
 1.  适用于linux环境下的Python安装
 - Python3的安装：
     - 进入服务器/root目录
@@ -32,6 +32,13 @@
 
 2.  Ubuntu中无法正确安装使用yum，改为使用apt-get
 3.  注意不同系统的安装依赖有所不同，需要根据自己的系统选择安装脚本
+
+#### 安装教程 Nginx
+```shell
+cd /root/server_maker/CentOS7
+chmod a+x Nginx_installer.sh
+./Nginx_installer.sh
+```
 
 #### 使用说明
 
