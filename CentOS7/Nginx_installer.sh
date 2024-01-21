@@ -14,6 +14,7 @@ echo "正在安装 依赖 openssl openssl-devel ..."
 yum install -y openssl openssl-devel
 
 echo "正在下载 nginx-1.9.9.tar.gz ..."
+yum -y install wget
 wget http://nginx.org/download/nginx-1.9.9.tar.gz
 
 echo "正在创建解压目录 /usr/local/nginx_install ..."
