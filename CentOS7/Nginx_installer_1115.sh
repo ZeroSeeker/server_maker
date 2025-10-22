@@ -27,7 +27,7 @@ echo "正在切换至目录 /usr/local/nginx_install/nginx-1.11.5/ ..."
 cd /usr/local/nginx_install/nginx-1.11.5/
 
 echo "正在编译安装 ..."
-./configure --prefix=/etc/nginx --with-http_stub_status_module --with-http_ssl_module --with-compat --with-stream
+./configure --prefix=/etc/nginx --with-http_stub_status_module --with-http_ssl_module --with-compat --with-stream --with-stream_ssl_module
 make
 make install
 
