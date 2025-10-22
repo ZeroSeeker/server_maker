@@ -13,21 +13,21 @@ yum install -y zlib zlib-devel
 echo "正在安装 依赖 openssl openssl-devel ..."
 yum install -y openssl openssl-devel
 
-echo "正在下载 nginx-1.9.9.tar.gz ..."
+echo "正在下载 nginx-1.9.11.tar.gz ..."
 yum -y install wget
-wget http://nginx.org/download/nginx-1.9.9.tar.gz
+wget http://nginx.org/download/nginx-1.9.11.tar.gz
 
 echo "正在创建解压目录 /usr/local/nginx_install ..."
 mkdir /usr/local/nginx_install
 
 echo "正在解压至目录 /usr/local/nginx_install ..."
-tar -zxvf nginx-1.9.9.tar.gz -C /usr/local/nginx_install
+tar -zxvf nginx-1.9.11.tar.gz -C /usr/local/nginx_install
 
-echo "正在切换至目录 /usr/local/nginx_install/nginx-1.9.9/ ..."
-cd /usr/local/nginx_install/nginx-1.9.9/
+echo "正在切换至目录 /usr/local/nginx_install/nginx-1.9.11/ ..."
+cd /usr/local/nginx_install/nginx-1.9.11/
 
-echo "正在安装 ..."
-./configure --prefix=/etc/nginx --with-http_stub_status_module --with-http_ssl_module
+echo "正在编译安装 ..."
+./configure --prefix=/etc/nginx --with-http_stub_status_module --with-http_ssl_module --with-compat --with-stream
 make
 make install
 
